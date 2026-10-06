@@ -11,10 +11,18 @@ La plataforma AI ASSISTANT ayuda a crear proyectos que pueden funcionar con dist
 El enfoque es ofrecer una herramienta flexible para facilitar la creación de aplicaciones para IoT, control o automatización, pudiendo operar con o sin asistencia explícita de un modelo LLM.
 Dentro de las herramientas de nuestra aplicacion, tenemos un editor para la generación de dashboards para proyectos pequeños (Ej. ESP8266/ESp32, etc), mostrando una base inicial en la que se pueden incorporar capacidades inteligentes.
 
+<img width="1365" height="718" alt="CtrlDASBOARD_3" src="https://github.com/user-attachments/assets/62ab6fd6-c243-45ec-a5d5-f40b200e5a41" />
+
+<img width="928" height="516" alt="CtrlDASBOARD_5" src="https://github.com/user-attachments/assets/a04bc8df-c447-4fde-a8d2-4e088c0023f5" />
+
+<img width="924" height="519" alt="CtrlDASBOARD_6" src="https://github.com/user-attachments/assets/01fe285c-a0f9-43c1-993a-ceda31682279" />
+
 ---
 
 ## Desarrollo colaborativo con modelos de inteligencia artificial pequeños: método hormiga para programación local
 En el video detallamos la experiencia de desarrollar software utilizando un modelo de inteligencia artificial local de tamaño reducido, específicamente el Qwen 2.5 Coder con 3 mil millones de parámetros. Dada la limitación computacional de la máquina (un Ryzen 7 con 8 GB de RAM), adoptamos un enfoque metódico y paciente denominado "trabajo hormiga", que consiste en dividir el proyecto en pequeñas tareas y avanzar paso a paso, respetando un plan estructurado. El modelo no puede manejar grandes contextos ni proyectos extensos de una sola vez; por ello, se genera previamente un plan o “árbol” que sintetiza las funciones y responsabilidades de cada archivo para facilitar la comprensión del modelo y evitar sobrecargar su memoria limitada.
+
+<img width="1364" height="719" alt="CtrlDASBOARD_0" src="https://github.com/user-attachments/assets/a1409cc6-a882-47d5-9aec-5caaa4c7d12c" />
 
 Lejos de ser una herramienta infalible, el modelo 3B presenta varios problemas como inventar APIs inexistentes, generar código erróneo, entrar en bucles o desviar sus respuestas espontáneamente. Ante esto, desarrollamos una metodología rigurosa donde nosotros los humanos con o sin la ayuda de el "Agente Local" o el "Agente en la Nube" actuamos como director y validador, el modelo como ejecutor y programador fragmentado, y una tercera entidad -una especie de asistente o agente- se encarga de mantener el plan actualizado, traducir instrucciones y controlar el flujo del trabajo. Además, implementamos varias reglas y filtros backend para forzar formatos y condiciones, asegurando que el código generado respete dependencias, prioridades y estructura, minimizando errores y manteniendo la integridad del proyecto.
 
@@ -51,17 +59,32 @@ En resumen, como mostramos en el video, ofrecemos una guía realista y práctica
 ## Uso del motor AI ASSISTANT para control aplicado a la Industria (Ver 2do video)
 [![Demo2 en YouTube](https://img.shields.io/badge/▶_Ver_demo-YouTube-red)](https://www.youtube.com/watch?v=A7ANInk5d_E)
 
-En este video explicamos cómo utilizar un modelo pequeño de inteligencia artificial (IA) ejecutándose de manera local para desarrollar y controlar un sistema SCADA aplicado al control de baterías petroleras. El proceso comienza con la vectorización y generación de “píldoras” de información contenidas en documentos técnicos, que se usan como contexto para alimentar al modelo IA local. Posteriormente, se configura un plan de trabajo dividido en tareas específicas para construir el programa, que en este caso es un SCADA desarrollado 100 % en Python, descartando otras herramientas orientadas a proyectos IoT pequeños.
+En este video explicamos cómo utilizar un modelo pequeño de inteligencia artificial (IA) ejecutándose de manera local para desarrollar y controlar un sistema SCADA aplicado al control de baterías petroleras. El proceso comienza con la vectorización y generación de “píldoras” de información contenidas en documentos técnicos, que se usan como contexto para alimentar al modelo IA local. 
+
+<img width="938" height="501" alt="AI_assistant_3" src="https://github.com/user-attachments/assets/587d7b2f-e64e-43ed-98cf-162bbffed72e" />
+
+Posteriormente, se configura un plan de trabajo dividido en tareas específicas para construir el programa, que en este caso es un SCADA desarrollado 100 % en Python, descartando otras herramientas orientadas a proyectos IoT pequeños.
+
+<img width="1364" height="719" alt="CtrlDASBOARD_0" src="https://github.com/user-attachments/assets/12c03bca-659e-4167-9219-64550df9dcb8" />
+
+<img width="936" height="497" alt="scada_3" src="https://github.com/user-attachments/assets/672a432e-9eb2-416e-8a77-8f3fc4e9d8b6" />
 
 Tambien mostramos cómo esta inteligencia artificial puede operar en tres modos: manual, asistido y automático. 
 - En modo manual, el operador tiene control total del proceso.
 - En modo asistido, la IA alerta y sugiere soluciones cuando detecta irregularidades.
 - Y en modo automático, el sistema toma decisiones por sí mismo para solucionar problemas.
 
+<img width="938" height="496" alt="scada_6" src="https://github.com/user-attachments/assets/048a2ed5-9d24-4b8e-8cf0-5e123e886677" />
+
+<img width="940" height="496" alt="scada_7" src="https://github.com/user-attachments/assets/e2330da1-abb1-4477-9348-bb1bf40152b8" />
+
 A pesar de contar con capas de seguridad, se reconoce que la IA puede cometer errores y el operador puede intervenir para corregirlos.
 
 Finalmente, y creo que es uno de los moemntos mas destacados del video, presentamos una modalidad de entrenamiento con simulaciones de fallas precargadas que permiten evaluar la capacidad del modelo e incluso los operadores, con un puntaje basado en su desempeño. 
-para concluir, la clave está en usar estas herramientas adecuadamente para complementar el control humano y mejorar la eficiencia en procesos industriales complejos.
+
+<img width="939" height="496" alt="scada_5" src="https://github.com/user-attachments/assets/415dfe74-98b8-4abd-bcd2-3e8f35cb2842" />
+
+Para concluir, la clave está en usar estas herramientas adecuadamente para complementar el control humano y mejorar la eficiencia en procesos industriales complejos.
 
 ### Puntos Destacados
 🤖 Vectorización y creación de “píldoras” con datos técnicos para alimentar modelos IA locales.
@@ -87,7 +110,7 @@ para concluir, la clave está en usar estas herramientas adecuadamente para comp
 
 🛠️ Versatilidad del Enfoque para Proyectos Industriales con IA Local: El modelo demostrado puede replicarse y adaptarse para distintos procesos y sectores industriales, validando la estrategia de usar modelos de IA pequeños en local para asistir y potenciar proyectos que requieran rapidez, confidencialidad y adaptación específica al contexto operativo, abriendo camino a futuras implementaciones escalables.
 
-Este video refuerza una visión práctica y moderna de la aplicación de inteligencia artificial en la automatización industrial, enfatizando la combinación de tecnología local y en la nube, contextos personalizados y la mirada crítica hacia la supervisión y entrenamiento continuo.
+Con este ultimo video, reforzamos una visión práctica y moderna de la aplicación de inteligencia artificial en la automatización industrial, enfatizando la combinación de tecnología local y en la nube, contextos personalizados y la mirada crítica hacia la supervisión y entrenamiento continuo.
 
 # Ventas y Soporte Técnico:
 prof.martintorres@educ.ar
